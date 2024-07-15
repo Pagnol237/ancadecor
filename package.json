@@ -1,0 +1,23 @@
+{
+  "name": "ancadecor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "D": "^1.0.0",
+    "firebase": "^10.5.0",
+    "next": "13.4.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.9.0",
+    "react-scroll": "^1.8.9",
+    "sass": "^1.63.4",
+    "sharp": "^0.32.1"
+  }
+}
