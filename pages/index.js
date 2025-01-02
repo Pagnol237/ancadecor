@@ -101,7 +101,7 @@ export default function Home() {
         */}
 
         <div className={styles.scroll}>
-            <img src={SroolPic} className={styles.scrollImage}/>
+            <Image src={SroolPic} className={styles.scrollImage} alt='image decor' width={300} height={200}/>
         </div>
 
        {/* end srollBox */}
@@ -113,7 +113,7 @@ export default function Home() {
           <div className={styles.grille_box}>
                     {data.map((infos,index)=>(
                         <div className={styles.box} key={index}>
-                            <img src={infos.Pic} className={styles.photo} />
+                            <Image src={infos.Pic} className={styles.photo} alt='image decor' width={300} height={200}/>
                             <div className={styles.title}>{infos.title} </div>    
                             <div className={styles.texte}>{infos.text} </div>    
                         </div>
