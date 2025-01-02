@@ -4,12 +4,6 @@ import Nav from './components/Nav'
 import styles from '../pages/mystyle/main.module.scss'
 import Link from 'next/link'
 import {AiOutlineWhatsApp} from 'react-icons/ai'
-import Pic1 from '../public/services/service1.jpg'
-import Pic2 from '../public/services/service2.jpg'
-import Pic3 from '../public/services/service3.jpg'
-import Pic4 from '../public/services/service4.jpg'
-import Pic5 from '../public/services/service5.jpg'
-import Pic6 from '../public/services/service6.jpg'
 import Image from 'next/image'
 import {AiOutlineFileText} from 'react-icons/ai'
 import SroolPic from '../pages/images/img5.jpg'
@@ -26,32 +20,32 @@ export default function Home() {
   const [data,setData]= useState([
     {
         title:'Décoration de mariage',
-        Pic:Pic1,
+        Pic:'/services/service1.jpg',
         text:'Eblouissez vos invités impériale pour une cérémonie indoor ou en air libre'
     },
     {
         title:'Fête d\’anniversaire',
-        Pic:Pic2,
+        Pic:'/services/service2.jpg',
         text:'Véritable invitation à la convivialité, votre soirée d\’anniversaire marquera les esprits de vos invités'
     },
    {
     title:'Restauration',
-    Pic:Pic5,
+    Pic:'/services/service5.jpg',
     text:'Faites chavirer les papilles de vos invités à travers des saveurs locales et exotiques pour un voyages appétissant'
    },
    {
     title:'Diner d\’exception',
-    Pic:Pic6,
+    Pic:'/services/service6.jpg',
     text:'Célébrez un évènement de façcon extra au tour d\’un verre entre connaissance dans l\’art de la modernité chic'
    },
    {
     title:'Sonorisation',
-    Pic:Pic4,
+    Pic:'/services/service4.jpg',
     text:'Rien de tel qu\’une belle embiance pour annimer vos soirées ett faire danser vos invités'
    },
    {
     title:'Soirée de gala',
-    Pic:Pic3,
+    Pic:'/services/service3.jpg',
     text:'Véritable invitation à la convivialité, votre soirée de gala marquera les esprits de vos invités'
    }
 ])
@@ -107,7 +101,7 @@ export default function Home() {
         */}
 
         <div className={styles.scroll}>
-            <Image src={SroolPic} className={styles.scrollImage}/>
+            <img src={SroolPic} className={styles.scrollImage}/>
         </div>
 
        {/* end srollBox */}
@@ -119,7 +113,7 @@ export default function Home() {
           <div className={styles.grille_box}>
                     {data.map((infos,index)=>(
                         <div className={styles.box} key={index}>
-                            <Image src={infos.Pic} className={styles.photo} />
+                            <img src={infos.Pic} className={styles.photo} />
                             <div className={styles.title}>{infos.title} </div>    
                             <div className={styles.texte}>{infos.text} </div>    
                         </div>
